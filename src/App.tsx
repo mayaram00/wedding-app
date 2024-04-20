@@ -23,18 +23,16 @@ function App() {
   return (
     <div className="App">
       <div className="wrapper">
-        <div className="wrapper">
-          <Header />
-          <div className="body">
-            {selectedPage === "Home" && <Home />}
-            {selectedPage === "Our Journey" && <OurJourney />}
-            {selectedPage === "Photos" && <Photos />}
-            {selectedPage === "Wedding Party" && <WeddingParty />}
-            {selectedPage === "Schedule" && <Schedule />}
-            {selectedPage === "RSVP" && <RSVP />}
-          </div>
-          <Footer />
+        <Header />
+        <div className="body">
+          {selectedPage === "Home" && <Home />}
+          {selectedPage === "Our Journey" && <OurJourney />}
+          {selectedPage === "Photos" && <Photos />}
+          {selectedPage === "Wedding Party" && <WeddingParty />}
+          {selectedPage === "Schedule" && <Schedule />}
+          {selectedPage === "RSVP" && <RSVP />}
         </div>
+        <Footer />
       </div>
     </div>
   );
