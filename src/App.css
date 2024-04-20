@@ -1,5 +1,33 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+  overflow: hidden;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    height: 100%;
+  }
+  .body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #fffcfc;
+    overflow-x: hidden;
+  }
 }
 
 .App-logo {
@@ -14,7 +42,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fffcfc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

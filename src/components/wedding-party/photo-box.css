@@ -1,0 +1,67 @@
+.photo-box-container {
+  height: 100%;
+  padding: 20px;
+
+  .background-box {
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &.overlay {
+      margin-top: -110%;
+      opacity: 0;
+      .pic-text {
+        padding-top: 50%;
+      }
+    }
+    &.overlay:hover {
+      opacity: 0.67;
+      color: white;
+    }
+    .pic-title {
+      flex: 1;
+      color: white;
+    }
+    .image {
+      flex: 6;
+      min-height: 0;
+      margin: 10px;
+      border-radius: 20px;
+      height: 100%;
+      width: 100%;
+      object-fit: scale-down;
+    }
+  }
+
+  .purple {
+    &:hover {
+      background-color: #260829;
+    }
+  }
+  .green {
+    &:hover {
+      background-color: #011710;
+    }
+  }
+
+  .blue {
+    &:hover {
+      background-color: #010e1e;
+    }
+  }
+  .yellow {
+    &:hover {
+      background-color: #100b00;
+    }
+  }
+  .orange {
+    &:hover {
+      background-color: #050200;
+    }
+  }
+  .pink {
+    &:hover {
+      background-color: #000000;
+    }
+  }
+}

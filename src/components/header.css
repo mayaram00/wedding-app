@@ -1,0 +1,45 @@
+.header {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #fffcfc;
+  max-height: 200px;
+  align-items: center;
+
+  &.tall {
+    max-height: 400px;
+  }
+
+  .image.small {
+    width: 70%;
+  }
+
+  .tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #444141;
+      color: white;
+    }
+
+    button.active {
+      background-color: #444141;
+    }
+    button.selected {
+      color: white;
+      background-color: #444141;
+    }
+  }
+}
